@@ -13,7 +13,7 @@ window.onload = function () {
   const blocks = document.querySelectorAll('.main__block');
 
   const updateBlockColor = (blocks) => {
-    blocks.forEach((block) => {
+    blocks.forEach((block, index) => {
       if (!block.hasAttribute('data-attribute')) {
         const color = generateRandomHex().toLocaleLowerCase();
         block.style.backgroundColor = color;
@@ -40,6 +40,8 @@ window.onload = function () {
   });
 
   updateBlockColor(blocks);
+
+  updateURL();
 
   window.addEventListener('keydown', function (e) {
     if (e.code === 'Space') {

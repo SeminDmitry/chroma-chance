@@ -70,6 +70,7 @@ table {
   border-radius: 10px;
   background-color: #cbb182;
   color: black;
+  font-weight: 300;
   font-size: 25px;
   line-height: 1em;
   transition: background 0.3s;
